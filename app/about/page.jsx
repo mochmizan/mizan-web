@@ -1,18 +1,35 @@
 import Image from "next/image";
 
 export default function About() {
-  return (
-    <main className="flex flex-col items-center mt-15 text-center justify-center">
-      <Image
-        src="/headshot_teal.png"  alt="Salma Kamal" width={200} height={200} className="object-cover rounded-full hover:shadow-2xl transition duration-300 mb-4"
-      />
-      <h1 className="text-4xl md:text-5xl font-bold mb-4 text-pink-900 dark:text-pink-300">About Me!</h1>
-      <p className="max-w-xs md:max-w-3xl md:text-lg mb-4 text-gray-600 dark:text-gray-300">
-      Hi! I’m <span className="font-semibold">Salma Karimah Kamal</span>, an Information Engineering student at UGM, with a passion for design, technology, and creating practical solutions through both logic and creativity.
-      </p>
-      <p className="max-w-xs md:max-w-3xl md:text-lg mb-4 text-gray-600 dark:text-gray-300"> 
-      I love learning how things work, from the logic behind code to the structure of real-world systems! I'm always eager to explore new ways to bridge creativity and engineering in my projects.
-      </p>
-    </main>
-  );
+    return (
+        <main className="flex flex-col md:flex-row items-center justify-center p-8 md:p-16 mt-10 md:mt-20 gap-10 md:gap-16">
+            <div className="flex-shrink-0">
+                <Image
+                    src="/bocah-ganteng-sakdunyo.jpg"
+                    alt="Mizan"
+                    width={300}
+                    height={400}
+                    className="object-cover rounded-lg shadow-xl hover:shadow-2xl transition duration-300 border-2 border-white" // Added white border
+                    priority
+                />
+            </div>
+            <div className="flex flex-col text-center md:text-left max-w-lg">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-black dark:text-white">
+                    About <span className="text-blue-600">Me</span>!
+                </h1>
+                <p className="md:text-lg mb-4 text-gray-700 dark:text-gray-300">
+                    Hi! I’m <span className="font-semibold text-black dark:text-white">Mizan</span>, an
+                    Internet Engineering student (Class of 2024), who has an interest in Cyber Security
+                    especially Data Science
+
+                    (I have been DEEP into learning that!).
+                </p>
+                <p className="md:text-lg mb-4 text-gray-700 dark:text-gray-300">
+                    First Diploma in Information Technology specializing in programming and has built a web based Islamic Calculator to help calculate
+                    inheritance wealth in accordance with Syari'ah. Commited to learn more about IT to enhance skills and stay up to date with
+                    current technology.
+                </p>
+            </div>
+        </main>
+    );
 }

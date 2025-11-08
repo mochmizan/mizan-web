@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Salma's Portofolio",
-  description: "Personal portofolio built with Next.js",
+  title: "Webnya Si Mizan",
+  description: "Masih pemula, jangan dihajar",
 };
 
 export default function RootLayout({ children }) {
