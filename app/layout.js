@@ -1,6 +1,8 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { Inter } from "next/font/google";
+import Script from "next/script";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -25,11 +27,12 @@ export default function RootLayout({ children }) {
         <footer className="w-full p-4 mt-20 text-center text-gray-500 border-t border-gray-200 dark:border-gray-800">
           © 2025 Mizan. All rights reserved.
         </footer>
-        <script
+
+        <Script
           src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
           crossOrigin=""
-        ></script>
+        />
       </body>
     </html>
   );
